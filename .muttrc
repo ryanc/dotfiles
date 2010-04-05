@@ -7,6 +7,12 @@ set ispell = "aspell --mode=email --check"
 set index_format = "%4C %Z [%{%c}] %-30.30L (%?l?%4l&%4c?) %s"  # better date format in the index
 set header_cache = ~/.mutt.cache/
 set message_cachedir = ~/.mutt.cache/
+set include = yes
+set mark_old = no
+set narrow_tree = yes
+set smart_wrap = yes
+set fast_reply = yes
+
 
 ## folders
 set record = ~/Maildir/.Sent
