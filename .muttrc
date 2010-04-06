@@ -1,5 +1,5 @@
 ## general settings
-set editor = "vim -u ~/.vimrc-mail"
+set editor = "vim"
 set sort = reverse-threads
 set use_envelope_from = yes
 set use_from = yes
