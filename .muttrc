@@ -12,6 +12,7 @@ set mark_old = no
 set narrow_tree = yes
 set smart_wrap = yes
 set fast_reply = yes
+set strict_threads = yes        # fix threading.
 
 ## folders
 set record = ~/Maildir/.Sent
