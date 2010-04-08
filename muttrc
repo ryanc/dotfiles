@@ -51,6 +51,9 @@ hdr_order From: Reply-To: Mail-Followup-To: To: Cc: Bcc: Subject: Date: Organiza
 # macro browser G "!echo 'fetching... ' ; getmail 2>&1 > /dev/null &\r" "Check for new mail via fetchmail"
 # set wait_key = no
 
+# mark all unread mail as read.
+macro index <Esc>R "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<tag-prefix><clear-flag>*"
+
 ## spamassassin stuff
 # spamassassin report and classify as spam
 # macro index S "|/usr/bin/spamassassin -r"
