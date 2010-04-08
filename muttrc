@@ -42,9 +42,10 @@ set spoolfile = ~/Maildir
 set folder = $HOME/Maildir
 
 ## headers
-ignore *
-unignore From: To: Cc: Bcc: Reply-To: Mail-Followup-To: Organization: User-Agent: X-Mailer: Subject: Date: X-Spam-Status: X-Bogosity: X-Spam-Level: X-Virus-Scan: X-Greylist: Sender: List-Id: Return-Path: Authentication-Results: Received-SPF: X-Virus-Scanned: X-Virus-Status: X-Priority:
-hdr_order From: Reply-To: Mail-Followup-To: To: Cc: Bcc: Subject: Date: Organization: User-Agent: X-Mailer: X-Spam-Status: X-Bogosity: X-Spam-Level: X-Virus-Scan: X-Greylist: Sender: List-Id: Return-Path: Authentication-Results: Received-SPF: X-Virus-Scanned: X-Virus-Status: X-Priority:
+ignore *        # hide all headers
+unhdr_order *   # override hdr_order set in system Muttrc.
+unignore return-path from resent-from sender list-id reply-to to resent-to cc bcc date resent-date organization user-agent x-priority message-id resent-message-id authentication-results received-spf x-greylist subject
+hdr_order return-path from resent-from sender list-id reply-to to resent-to cc bcc date resent-date organization user-agent x-priority message-id resent-message-id authentication-results received-spf x-greylist subject
 
 # mark all unread mail as read.
 macro index <Esc>R "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<tag-prefix><clear-flag>*"
