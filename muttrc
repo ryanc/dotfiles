@@ -20,7 +20,7 @@ set mbox = ~/Maildir/.Archive
 set postponed = ~/Maildir/.Drafts
 set spoolfile = ~/Maildir
 set folder = $HOME/Maildir
-set trash = ~/Maildir/.Trash
+set trash = ~/Maildir/.Trash        # move mail to trash instad of deleting
 
 ## pretty colors
 color index brightyellow black ~N                   # highlight new messages 
@@ -56,9 +56,9 @@ hdr_order From: Reply-To: Mail-Followup-To: To: Cc: Bcc: Subject: Date: Organiza
 macro index <Esc>R "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<tag-prefix><clear-flag>*"
 
 # folder hooks
-folder-hook . "set sort = reverse-date"
-folder-hook ^.Lists "set sort = reverse-threads"
-folder-hook ^.Sent "set sort = reverse-date-sent"
+folder-hook . "set sort = reverse-date"                 # default sort
+folder-hook ^.Lists "set sort = reverse-threads"        # sort lists by threads
+folder-hook ^.Sent "set sort = reverse-date-sent"       # sort sent mail
 
 ## spamassassin stuff
 # spamassassin report and classify as spam
