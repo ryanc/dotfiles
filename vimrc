@@ -1,36 +1,27 @@
-" Set to 256 color mode.
-set t_Co=256
-" Enable syntax highlighting.
-syntax on
-" Set color scheme.
-colorscheme darkburn 
-" Enable line numbering.
-set number
-" Disable word wrap.
-set nowrap
-" Set tab to 4 characters.
-set tabstop=4
-" Enable smart indent.
-set smartindent
+if $MONO != "yes"
+    set t_Co=256            " Set to 256 color mode.
+    syntax on               " Enable syntax highlighting.
+    colorscheme darkburn    " Set color scheme.
+    set number              " Enable line numbering.
+endif
+set nowrap              " Disable word wrap.
+set tabstop=4           " Set tab to 4 characters.
+set smartindent         " Enable smart indent.
 set autoindent
-" Set smartindent width to 4 characters.
-set shiftwidth=4
-" Highlight search and increment search.
-set hlsearch
+set shiftwidth=4        " Set smartindent width to 4 characters.
+set hlsearch            " Highlight search and increment search.
 set incsearch
-" Show matching brackets.
-set showmatch
-" Disable modeline support.
-set nomodeline
-
+set showmatch           " Show matching brackets.
+set nomodeline          " Disable modeline support.
 set expandtab
 set softtabstop=4
+set showcmd             " Show partial command in status line.
+set ignorecase          " Case insensitive searching.
+set smartcase           " Smart case matching.
+set autowrite           " Save before switching buffers.
 
-if $MONO == "yes"
-    colorscheme default
-    syntax off
-    set nonumber
-endif
+au BufNewFile,BufRead *.txt set ft=text
+au FileType text set tw=72 spell spelllang=en_us nonumber
 
 au FileType mail set tw=72 spell spelllang=en_us nonumber
 au FileType gitcommit set tw=72 spell spelllang=en_us nonumber
