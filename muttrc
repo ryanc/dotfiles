@@ -20,6 +20,7 @@ set mbox = ~/Maildir/.Archive
 set postponed = ~/Maildir/.Drafts
 set spoolfile = ~/Maildir
 set folder = $HOME/Maildir
+set trash = ~/Maildir/.Trash
 
 ## pretty colors
 color index brightyellow black ~N                   # highlight new messages 
