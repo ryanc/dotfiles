@@ -46,12 +46,6 @@ ignore *
 unignore From: To: Cc: Bcc: Reply-To: Mail-Followup-To: Organization: User-Agent: X-Mailer: Subject: Date: X-Spam-Status: X-Bogosity: X-Spam-Level: X-Virus-Scan: X-Greylist: Sender: List-Id: Return-Path: Authentication-Results: Received-SPF: X-Virus-Scanned: X-Virus-Status: X-Priority:
 hdr_order From: Reply-To: Mail-Followup-To: To: Cc: Bcc: Subject: Date: Organization: User-Agent: X-Mailer: X-Spam-Status: X-Bogosity: X-Spam-Level: X-Virus-Scan: X-Greylist: Sender: List-Id: Return-Path: Authentication-Results: Received-SPF: X-Virus-Scanned: X-Virus-Status: X-Priority:
 
-## key bindings
-# macro index   G "!echo 'fetching... ' ; getmail 2>&1 > /dev/null &\r" "Check for new mail via fetchmail"
-# macro pager   G "!echo 'fetching... ' ; getmail 2>&1 > /dev/null &\r" "Check for new mail via fetchmail"
-# macro browser G "!echo 'fetching... ' ; getmail 2>&1 > /dev/null &\r" "Check for new mail via fetchmail"
-# set wait_key = no
-
 # mark all unread mail as read.
 macro index <Esc>R "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<tag-prefix><clear-flag>*"
 
@@ -59,14 +53,6 @@ macro index <Esc>R "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<tag-prefix><
 folder-hook . "set sort = reverse-date"                 # default sort
 folder-hook ^.Lists "set sort = reverse-threads"        # sort lists by threads
 folder-hook ^.Sent "set sort = reverse-date-sent"       # sort sent mail
-
-## spamassassin stuff
-# spamassassin report and classify as spam
-# macro index S "|/usr/bin/spamassassin -r"
-# spamassassin classify as ham
-# macro index H "|/usr/bin/sa-learn --ham  --no-rebuild --single"
-# rebuild the spamassassin bayes filter db
-# macro index R "!/usr/bin/sa-learn --rebuild"
 
 ## personal settings
 source ~/.muttrc.personal   # settings such as name and email address
