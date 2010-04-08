@@ -54,6 +54,11 @@ hdr_order From: Reply-To: Mail-Followup-To: To: Cc: Bcc: Subject: Date: Organiza
 # mark all unread mail as read.
 macro index <Esc>R "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<tag-prefix><clear-flag>*"
 
+# folder hooks
+folder-hook . "set sort = reverse-date"
+folder-hook ^.Lists "set sort = reverse-threads"
+folder-hook ^.Sent "set sort = reverse-date-sent"
+
 ## spamassassin stuff
 # spamassassin report and classify as spam
 # macro index S "|/usr/bin/spamassassin -r"
