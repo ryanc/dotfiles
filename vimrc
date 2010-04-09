@@ -4,6 +4,13 @@ if $MONO != "yes"
     colorscheme darkburn    " Set color scheme.
     set number              " Enable line numbering.
 endif
+if has("gui_running")
+    :colorscheme inkpot
+    ":set guifont=Menlo\ Bold
+    ":set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
+    :set guifont=DejaVu\ Sans\ Mono\ Bold
+    syntax on
+endif
 set nowrap              " Disable word wrap.
 set tabstop=4           " Set tab to 4 characters.
 set smartindent         " Enable smart indent.
