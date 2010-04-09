@@ -7,7 +7,7 @@ else
     filetype on
 endif
 if has("gui_running")
-    colorscheme inkpot
+    colorscheme tesla
     "set guifont=Menlo\ Bold
     "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
     set guifont=DejaVu\ Sans\ Mono\ Bold
