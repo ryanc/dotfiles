@@ -2,13 +2,15 @@ if $MONO != "yes"
     set t_Co=256            " Set to 256 color mode.
     syntax on               " Enable syntax highlighting.
     colorscheme darkburn    " Set color scheme.
-    set number              " Enable line numbering.
+    set nonumber              " Enable line numbering.
+else
+    filetype on
 endif
 if has("gui_running")
-    :colorscheme inkpot
-    ":set guifont=Menlo\ Bold
-    ":set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
-    :set guifont=DejaVu\ Sans\ Mono\ Bold
+    colorscheme inkpot
+    "set guifont=Menlo\ Bold
+    "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
+    set guifont=DejaVu\ Sans\ Mono\ Bold
     syntax on
 endif
 set nowrap              " Disable word wrap.
