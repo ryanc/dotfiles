@@ -4,6 +4,7 @@ if $MONO != "yes"
     colorscheme darkburn    " Set color scheme.
     set nonumber              " Enable line numbering.
 else
+    " makes the autocmd's work when in MONO mode.
     filetype on
 endif
 if has("gui_running")
