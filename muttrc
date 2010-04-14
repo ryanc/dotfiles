@@ -31,7 +31,7 @@ color header red black "X-Spam-Status: YES"
 color header brightwhite black "X-Spam-Level:"
 color header red black "X-Virus-Scan:.*FOUND"
 color header brightwhite black "X-Greylist:"
-color status brightwhite red                        # color the status bar
+color status brightwhite green                        # color the status bar
 color body brightcyan default "(http|https|ftp|mailto|telnet|ssh)://[^ ]+"
 
 ## folders

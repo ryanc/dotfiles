@@ -29,6 +29,7 @@ set showcmd             " Show partial command in status line.
 set ignorecase          " Case insensitive searching.
 set smartcase           " Smart case matching.
 set autowrite           " Save before switching buffers.
+set number
 
 au BufNewFile,BufRead *.txt set ft=text
 au FileType text set tw=72 spell spelllang=en_us nonumber
