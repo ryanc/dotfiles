@@ -33,6 +33,8 @@ color header red black "X-Virus-Scan:.*FOUND"
 color header brightwhite black "X-Greylist:"
 color status brightwhite green                        # color the status bar
 color body brightcyan default "(http|https|ftp|mailto|telnet|ssh)://[^ ]+"
+color header brightgreen black "Received-SPF: Pass"
+color header brightgreen black "Authentication-Results:.*dkim=pass"
 
 ## folders
 set record = ~/Maildir/.Sent
