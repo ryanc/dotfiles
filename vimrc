@@ -30,6 +30,7 @@ set ignorecase          " Case insensitive searching.
 set smartcase           " Smart case matching.
 set autowrite           " Save before switching buffers.
 set number
+set smarttab
 
 au BufNewFile,BufRead *.txt set ft=text
 au FileType text set tw=72 spell spelllang=en_us nonumber
