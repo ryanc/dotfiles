@@ -28,3 +28,9 @@ fi
 # load up ssh key
 keychain ~/.ssh/id_rsa
 . ~/.keychain/$HOSTNAME-sh
+
+# some aliases
+alias vi='vim'
+alias ta='tmux attach'
+alias ns='netstat -tulpn'
+alias llh='ls -lh'
