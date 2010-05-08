@@ -26,7 +26,7 @@ if [ -d "/usr/local/ssl/bin" ] ; then
 fi
 
 # load up ssh key
-keychain ~/.ssh/id_rsa
+keychain --timeout 60 ~/.ssh/id_rsa
 . ~/.keychain/$HOSTNAME-sh
 
 # some aliases
