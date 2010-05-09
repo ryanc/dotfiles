@@ -12,6 +12,7 @@ if has("gui_running")
     "set guifont=Menlo\ Bold
     "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
     set guifont=DejaVu\ Sans\ Mono\ Bold
+    set guioptions=egmrt
     syntax on
 endif
 set nowrap              " Disable word wrap.
