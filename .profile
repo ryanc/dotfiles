@@ -25,6 +25,10 @@ if [ -d "/usr/local/ssl/bin" ] ; then
     PATH="/usr/local/ssl/bin:$PATH"
 fi
 
+if [ -d "/usr/local/php/bin" ]; then
+    PATH="/usr/local/php/bin:$PATH"
+fi
+
 # load up ssh key
 keychain --timeout 240 ~/.ssh/id_rsa
 . ~/.keychain/$HOSTNAME-sh
