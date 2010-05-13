@@ -8,8 +8,6 @@ else
     filetype on
 endif
 if has("gui_running")
-    colorscheme tesla
-    syntax on
     if has("win32")
         set guifont=Consolas:h10:b
     elseif has("mac")
@@ -17,7 +15,11 @@ if has("gui_running")
         "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
         set guifont=DejaVu\ Sans\ Mono\ Bold
     endif
+    
+    " general gui settings
     set guioptions=egmrt
+    colorscheme tesla
+    syntax on
 endif
 set nowrap              " Disable word wrap.
 set tabstop=4           " Set tab to 4 characters.
