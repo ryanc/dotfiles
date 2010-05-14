@@ -1,3 +1,6 @@
+" vim config
+" Ryan Cavicchioni
+
 if $MONO != "yes"
     set t_Co=256            " Set to 256 color mode.
     syntax on               " Enable syntax highlighting.
