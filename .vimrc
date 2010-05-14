@@ -15,7 +15,7 @@ if has("gui_running")
         "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
         set guifont=DejaVu\ Sans\ Mono\ Bold
     endif
-    
+
     " general gui settings
     set guioptions=egmrt
     colorscheme tesla
