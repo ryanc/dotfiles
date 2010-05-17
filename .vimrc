@@ -20,7 +20,7 @@ if has("gui_running")
     endif
 
     " general gui settings
-    set guioptions=egmrt
+    set guioptions=egt
     colorscheme tesla
     syntax on
 endif
