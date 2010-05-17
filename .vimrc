@@ -12,7 +12,7 @@ else
 endif
 if has("gui_running")
     if has("win32")
-        set guifont=Consolas:h10:b
+        set guifont=Droid_Sans_Mono:h9:cANSI
     elseif has("mac")
         "set guifont=Menlo\ Bold
         "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
