@@ -33,7 +33,6 @@ set hlsearch            " Highlight search and increment search.
 set incsearch
 set showmatch           " Show matching brackets.
 set nomodeline          " Disable modeline support.
-set expandtab
 set softtabstop=4
 set showcmd             " Show partial command in status line.
 set ignorecase          " Case insensitive searching.
