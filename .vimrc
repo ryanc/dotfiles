@@ -47,6 +47,7 @@ au FileType text set tw=72 spell spelllang=en_us nonumber
 
 au FileType mail set tw=72 spell spelllang=en_us nonumber
 au FileType gitcommit set tw=72 spell spelllang=en_us nonumber
+au FileType html set tabstop=2 shiftwidth=2
 
 " keyboard shortcuts
 nmap <leader>l :set list!<CR>
