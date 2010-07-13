@@ -49,6 +49,7 @@ au FileType mail set tw=72 spell spelllang=en_us nonumber
 au FileType gitcommit set tw=72 spell spelllang=en_us nonumber
 au BufNewFile,BufRead *.phtml set tabstop=2 shiftwidth=2
 au FileType html set tabstop=2 shiftwidth=2
+au FileType xml set tabstop=2 shiftwidth=2
 
 " keyboard shortcuts
 nmap <leader>l :set list!<CR>
