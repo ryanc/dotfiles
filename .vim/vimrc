@@ -1,0 +1,130 @@
+" vim config
+" Ryan Cavicchioni
+
+if $MONO != "yes"
+    set t_Co=256            " Set to 256 color mode.
+    syntax on               " Enable syntax highlighting.
+    "colorscheme lilypink    " Set color scheme.
+    "colorscheme twilight256
+    colorscheme burnttoast256
+    set nonumber              " Enable line numbering.
+else
+    " makes the autocmd's work when in MONO mode.
+    filetype on
+endif
+
+set nowrap              " Disable word wrap.
+set tabstop=4           " Set tab to 4 characters.
+set smartindent         " Enable smart indent.
+set autoindent
+set shiftwidth=4        " Set smartindent width to 4 characters.
+set hlsearch            " Highlight search and increment search.
+set incsearch
+set showmatch           " Show matching brackets.
+set nomodeline          " Disable modeline support.
+set softtabstop=4
+set showcmd             " Show partial command in status line.
+set ignorecase          " Case insensitive searching.
+set smartcase           " Smart case matching.
+set autowrite           " Save before switching buffers.
+set number
+set smarttab
+set listchars=tab:·\ ,eol:$
+set expandtab
+set backspace=indent,eol
+set textwidth=80
+set spell
+
+if has("win32")
+    silent execute "!mkdir " . $HOME . "\\vimfiles\\backup"
+    silent execute "!mkdir " . $HOME . "\\vimfiles\\swp"
+    set backupdir=~/vimfiles/backup/
+    set directory=~/vimfiles/swp/
+else
+    silent !mkdir -p ~/.vim/{backup,swp}/
+    set backupdir=~/.vim/backup/
+    set directory=~/.vim/swp/
+endif
+
+au BufNewFile,BufRead *.txt set ft=text
+au FileType text set tw=72 spell spelllang=en_us nonumber
+
+au FileType mail set tw=72 spell spelllang=en_us nonumber
+au FileType gitcommit set tw=72 spell spelllang=en_us nonumber
+au BufNewFile,BufEnter *.phtml set tabstop=2 shiftwidth=2 softtabstop=2
+au FileType html set tabstop=2 shiftwidth=2 softtabstop=2
+au FileType xml set tabstop=2 shiftwidth=2 softtabstop=2
+au FileType ant set tabstop=2 shiftwidth=2 softtabstop=2
+au FileType yaml set tabstop=2 shiftwidth=2 softtabstop=2
+au FileType php set tabstop=4 shiftwidth=4 softtabstop=4
+
+" keyboard shortcuts
+nmap <silent> <leader>l :set list!<CR>
+nmap <silent> <leader>t :NERDTreeToggle<CR>
+nmap <silent> <leader>u :GundoToggle<CR>
+
+"call pathogen#helptags()
+"call pathogen#runtime_append_all_bundles()
+
+filetype off 
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'git://github.com/samsonw/vim-task.git'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'vimwiki'
+Bundle 'git://github.com/sjl/gundo.vim.git'
+Bundle 'git://github.com/scrooloose/nerdcommenter.git'
+Bundle 'git://github.com/scrooloose/nerdtree.git'
+Bundle 'git://github.com/jnurmine/Zenburn.git'
+" Bundle 'git://github.com/Raimondi/delimitMate.git'
+" Bundle 'git://github.com/kana/vim-smartinput.git'
+Bundle 'git://github.com/ciaranm/inkpot.git'
+Bundle 'git://github.com/nanotech/jellybeans.vim.git'
+Bundle 'git://github.com/guns/jellyx.vim.git'
+Bundle 'git://github.com/msanders/snipmate.vim.git'
+Bundle 'git://github.com/strange/strange.vim.git'
+Bundle 'git://github.com/godlygeek/tabular.git'
+Bundle 'git://github.com/veloce/vim-aldmeris.git'
+Bundle 'git://github.com/altercation/vim-colors-solarized.git'
+Bundle 'git://github.com/Lokaltog/vim-distinguished.git'
+Bundle 'git://github.com/nelstrom/vim-mac-classic-theme.git'
+Bundle 'git://github.com/atonse/vydark.git'
+Bundle 'git://github.com/vim-scripts/vylight.git'
+Bundle 'git://github.com/tpope/vim-surround.git'
+Bundle 'git://github.com/tpope/vim-vividchalk.git'
+Bundle 'git://github.com/ciaranm/inkpot.git'
+Bundle 'git://github.com/mattn/gist-vim.git'
+Bundle 'git://github.com/jpo/vim-railscasts-theme.git'
+Bundle 'git://github.com/oguzbilgic/sexy-railscasts-theme.git'
+Bundle 'git://github.com/mrkn/mrkn256.vim.git'
+Bundle 'git://github.com/bcat/abbott.vim.git'
+Bundle 'twilight256.vim'                                                                                                                                                                             
+Bundle 'vilight.vim'
+Bundle 'git://github.com/dasch/vim-mocha.git'
+Bundle 'git://github.com/dasch/satellite.git'
+Bundle 'git://github.com/djjcast/mirodark.git'
+Bundle 'git://github.com/mattsa/vim-eddie.git'
+Bundle 'git://github.com/molok/vim-vombato-colorscheme.git'
+Bundle 'git://github.com/jelera/vim-gummybears-colorscheme.git'
+Bundle 'git://github.com/sjl/badwolf.git'
+Bundle 'git://github.com/shawncplus/skittles_berry.git'
+Bundle 'Skittles-Dark'
+Bundle 'tortex'
+Bundle 'mayansmoke'
+Bundle 'https://github.com/sjl/badwolf.git'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/w0ng/vim-hybrid.git'
+Bundle 'https://github.com/blackgate/tropikos-vim-theme.git'
+Bundle 'https://github.com/zaki/zazen.git'
+Bundle 'https://github.com/jonathanfilip/vim-lucius.git'
+
+filetype plugin indent on
+
+" If it exists, include user's local vim config
+ if filereadable(expand("~/.vimrc.local"))
+     source ~/.vimrc.local
+ endif
