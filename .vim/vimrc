@@ -125,6 +125,6 @@ Bundle 'https://github.com/jonathanfilip/vim-lucius.git'
 filetype plugin indent on
 
 " If it exists, include user's local vim config
- if filereadable(expand("~/.vimrc.local"))
-     source ~/.vimrc.local
- endif
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
