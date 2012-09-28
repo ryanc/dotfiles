@@ -121,6 +121,7 @@ Bundle 'https://github.com/w0ng/vim-hybrid.git'
 Bundle 'https://github.com/blackgate/tropikos-vim-theme.git'
 Bundle 'https://github.com/zaki/zazen.git'
 Bundle 'https://github.com/jonathanfilip/vim-lucius.git'
+Bundle 'https://github.com/chriskempson/vim-tomorrow-theme.git'
 
 filetype plugin indent on
 
