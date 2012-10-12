@@ -34,6 +34,7 @@ set expandtab
 set backspace=indent,eol
 set textwidth=80
 set spell
+set ruler
 
 if has("win32")
     silent execute "!mkdir " . $HOME . "\\vimfiles\\backup"
@@ -52,6 +53,7 @@ au FileType text set tw=72 spell spelllang=en_us nonumber
 au FileType mail set tw=72 spell spelllang=en_us nonumber
 au FileType gitcommit set tw=72 spell spelllang=en_us nonumber
 au BufNewFile,BufEnter *.phtml set tabstop=2 shiftwidth=2 softtabstop=2
+au BufNewFile,BufEnter *.twig set tabstop=2 shiftwidth=2 softtabstop=2 ft=htmljinja
 au FileType html set tabstop=2 shiftwidth=2 softtabstop=2
 au FileType xml set tabstop=2 shiftwidth=2 softtabstop=2
 au FileType ant set tabstop=2 shiftwidth=2 softtabstop=2
@@ -122,6 +124,7 @@ Bundle 'https://github.com/blackgate/tropikos-vim-theme.git'
 Bundle 'https://github.com/zaki/zazen.git'
 Bundle 'https://github.com/jonathanfilip/vim-lucius.git'
 Bundle 'https://github.com/chriskempson/vim-tomorrow-theme.git'
+Bundle 'https://github.com/tangphillip/SunburstVIM.git'
 
 filetype plugin indent on
 
