@@ -60,4 +60,4 @@ PS1='\[\e[1;32m\][\u@\h \w] \$\[\e[0m\] '
 
 export EDITOR=vim
 
-PATH=$PATH:/usr/local/bin
+PATH=/usr/local/bin:$PATH
