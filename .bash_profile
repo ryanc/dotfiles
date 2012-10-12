@@ -59,3 +59,5 @@ PS1='\[\e[1;32m\][\u@\h \w] \$\[\e[0m\] '
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 export EDITOR=vim
+
+PATH=$PATH:/usr/local/bin
