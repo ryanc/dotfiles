@@ -29,12 +29,33 @@ if [ -d "/usr/local/php/bin" ]; then
     PATH="/usr/local/php/bin:$PATH"
 fi
 
+if [ -d "/usr/local/pgsql/bin" ]; then
+    PATH="/usr/local/pgsql/bin:$PATH"
+fi
+
+if [ -d "/usr/local/mysql/bin" ]; then
+    PATH="/usr/local/mysql/bin:$PATH"
+fi
+
+if [ -e "/usr/bin/keychain" ]; then
 # load up ssh key
-keychain --timeout 240 ~/.ssh/id_rsa
-. ~/.keychain/$HOSTNAME-sh
+    keychain --timeout 240 ~/.ssh/id_rsa
+    source ~/.keychain/$HOSTNAME-sh
+fi
 
 # some aliases
 alias vi='vim'
 alias ta='tmux attach'
+alias ta2='tmux -2 attach'
 alias ns='netstat -tulpn'
 alias llh='ls -lh'
+alias ll='ls -lp'
+alias ls='ls -p'
+
+# set 1337 h4x0r looking shell prompt
+#PS1="\w > "
+PS1='\[\e[1;32m\][\u@\h \w] \$\[\e[0m\] '
+
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+export EDITOR=vim
