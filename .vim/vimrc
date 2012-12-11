@@ -128,10 +128,9 @@ Bundle 'https://github.com/tangphillip/SunburstVIM.git'
 Bundle 'https://github.com/groenewege/vim-less.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'python.vim'
-Bundle 'https://github.com/nelstrom/vim-blackboard'
-Bundle 'https://github.com/tomasr/molokai'
+Bundle 'https://github.com/nelstrom/vim-blackboard.git'
 Bundle 'https://github.com/tomasr/molokai.git'
-Bundle 'https://github.com/zeis/kolor.git'
+Bundle 'https://github.com/zeis/vim-kolor.git'
 Bundle 'https://github.com/morhetz/gruvbox.git'
 
 filetype plugin indent on
