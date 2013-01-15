@@ -3,5 +3,3 @@
 	email = ryan@confabulator.net
 [color]
 	ui = true
-[push]
-	default = simple
