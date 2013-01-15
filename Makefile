@@ -1,4 +1,6 @@
-install: install-vim install-git install-bash install-colordiff install-hg
+install: install-vim install-git install-bash install-colordiff install-hg \
+		 install-mutt
+
 install-vim:
 	rm -rf ~/.vim ~/.vimrc
 	ln -s `pwd`/.vim ~/.vim
@@ -19,3 +21,7 @@ install-colordiff:
 install-hg:
 	rm -f ~/.hgrc
 	ln -s `pwd`/.hgrc ~/.hgrc
+
+install-mutt:
+	rm -f ~/.muttrc
+	ln -s `pwd`/.muttrc ~/.muttrc
