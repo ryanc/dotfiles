@@ -59,6 +59,7 @@ au FileType xml set tabstop=2 shiftwidth=2 softtabstop=2
 au FileType ant set tabstop=2 shiftwidth=2 softtabstop=2
 au FileType yaml set tabstop=2 shiftwidth=2 softtabstop=2
 au FileType php set tabstop=4 shiftwidth=4 softtabstop=4
+au FileType make set noexpandtab
 
 " keyboard shortcuts
 nmap <silent> <leader>l :set list!<CR>
