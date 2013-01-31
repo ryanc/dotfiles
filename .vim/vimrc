@@ -135,6 +135,8 @@ Bundle 'https://github.com/zeis/vim-kolor.git'
 Bundle 'https://github.com/morhetz/gruvbox.git'
 Bundle 'https://github.com/trapd00r/neverland-vim-theme.git'
 Bundle 'https://github.com/chriskempson/base16-vim.git'
+"Bundle 'https://github.com/changyuheng/holokai.git'
+Bundle 'https://github.com/ryanc/holokai.git'
 
 filetype plugin indent on
 
