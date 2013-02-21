@@ -142,6 +142,9 @@ Bundle 'https://github.com/noahfrederick/Hemisu.git'
 
 filetype plugin indent on
 
+" Force hash comments to retain their indentation level.
+inoremap # X#
+
 " If it exists, include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
