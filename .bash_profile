@@ -60,7 +60,6 @@ PS1='\[\e[1;32m\][\u@\h \w] \$\[\e[0m\] '
 
 export EDITOR=vim
 
-PATH=/usr/local/bin:$PATH
+PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
-# This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+eval "$(rbenv init -)"
