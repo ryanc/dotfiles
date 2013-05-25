@@ -4,9 +4,6 @@
 if $MONO != "yes"
     set t_Co=256            " Set to 256 color mode.
     syntax on               " Enable syntax highlighting.
-    "colorscheme lilypink    " Set color scheme.
-    "colorscheme twilight256
-    colorscheme burnttoast256
     set nonumber              " Enable line numbering.
 else
     " makes the autocmd's work when in MONO mode.
@@ -139,6 +136,9 @@ Bundle 'https://github.com/chriskempson/base16-vim.git'
 "Bundle 'https://github.com/changyuheng/holokai.git'
 Bundle 'https://github.com/ryanc/holokai.git'
 Bundle 'https://github.com/noahfrederick/Hemisu.git'
+Bundle 'https://github.com/sk1418/last256.git'
+
+colorscheme last256
 
 filetype plugin indent on
 
