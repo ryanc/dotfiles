@@ -88,7 +88,9 @@ Bundle 'scratch.vim'
 
 " Syntax
 Bundle 'https://github.com/groenewege/vim-less.git'
+Bundle 'https://github.com/tpope/vim-haml.git'
 Bundle 'go'
+Bundle 'https://github.com/slim-template/vim-slim.git'
 
 " Themes
 Bundle 'git://github.com/jnurmine/Zenburn.git'
