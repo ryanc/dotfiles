@@ -143,6 +143,8 @@ Bundle 'https://github.com/ryanc/holokai.git'
 Bundle 'https://github.com/noahfrederick/Hemisu.git'
 Bundle 'https://github.com/sk1418/last256.git'
 Bundle 'https://github.com/toupeira/vim-desertink.git'
+Bundle 'https://github.com/junegunn/seoul256.vim.git'
+Bundle 'lsdr/monokai'
 
 colorscheme last256
 
