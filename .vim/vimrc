@@ -92,6 +92,7 @@ Bundle 'https://github.com/tpope/vim-haml.git'
 Bundle 'go'
 Bundle 'https://github.com/slim-template/vim-slim.git'
 Bundle 'https://github.com/juvenn/mustache.vim.git'
+Bundle 'https://github.com/puppetlabs/puppet-syntax-vim.git'
 
 " Themes
 Bundle 'git://github.com/jnurmine/Zenburn.git'
