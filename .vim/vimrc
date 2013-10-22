@@ -32,6 +32,7 @@ set backspace=indent,eol
 set textwidth=80
 set spell
 set ruler
+set laststatus=2
 
 if has("win32")
     silent execute "!mkdir " . $HOME . "\\vimfiles\\backup"
