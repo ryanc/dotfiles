@@ -86,11 +86,12 @@ Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'python.vim'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'scratch.vim'
+Bundle 'bling/vim-airline'
 
 " Syntax
 Bundle 'https://github.com/groenewege/vim-less.git'
 Bundle 'https://github.com/tpope/vim-haml.git'
-Bundle 'go'
+"Bundle 'go'
 Bundle 'https://github.com/slim-template/vim-slim.git'
 Bundle 'https://github.com/juvenn/mustache.vim.git'
 Bundle 'https://github.com/puppetlabs/puppet-syntax-vim.git'
