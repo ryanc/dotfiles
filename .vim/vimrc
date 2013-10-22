@@ -43,6 +43,10 @@ set spell
 set ruler
 set laststatus=2
 
+nnoremap <leader>s :set spell!<CR>
+nnoremap <leader>n :set number!<CR>
+nnoremap <leader>rn :set relativenumber!<CR>
+
 if has("win32")
     silent execute "!mkdir " . $HOME . "\\vimfiles\\backup"
     silent execute "!mkdir " . $HOME . "\\vimfiles\\swp"
