@@ -155,6 +155,7 @@ NeoBundle 'sk1418/last256.git'
 NeoBundle 'toupeira/vim-desertink.git'
 NeoBundle 'junegunn/seoul256.vim.git'
 NeoBundle 'lsdr/monokai'
+NeoBundle 'daylerees/colour-schemes', { "rtp": "vim-themes/" }
 
 colorscheme last256
 
