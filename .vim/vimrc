@@ -97,6 +97,7 @@ NeoBundle 'python.vim'
 NeoBundle 'kien/ctrlp.vim.git'
 NeoBundle 'scratch.vim'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'tpope/vim-characterize'
 
 " Syntax
 NeoBundle 'groenewege/vim-less.git'
