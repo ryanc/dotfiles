@@ -37,11 +37,11 @@ if [ -d "/usr/local/mysql/bin" ]; then
     PATH="/usr/local/mysql/bin:$PATH"
 fi
 
-#if [ -e "/usr/bin/keychain" ]; then
-## load up ssh key
-#    keychain --timeout 240 ~/.ssh/id_rsa
-#    source ~/.keychain/$HOSTNAME-sh
-#fi
+if [ -e "/usr/bin/keychain" ]; then
+# load SSH key
+    keychain --timeout 240 ~/.ssh/id_rsa
+    source ~/.keychain/$HOSTNAME-sh
+fi
 
 # some aliases
 alias vi='vim'
