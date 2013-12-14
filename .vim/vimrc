@@ -102,7 +102,7 @@ NeoBundle 'tpope/vim-characterize'
 " Syntax
 NeoBundle 'groenewege/vim-less.git'
 NeoBundle 'tpope/vim-haml.git'
-"NeoBundle 'go'
+NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'slim-template/vim-slim.git'
 NeoBundle 'juvenn/mustache.vim.git'
 NeoBundle 'puppetlabs/puppet-syntax-vim.git'
@@ -157,6 +157,10 @@ NeoBundle 'toupeira/vim-desertink.git'
 NeoBundle 'junegunn/seoul256.vim.git'
 NeoBundle 'lsdr/monokai'
 NeoBundle 'daylerees/colour-schemes', { "rtp": "vim-themes/" }
+NeoBundle 'Pychimp/vim-luna'
+NeoBundle 'Pychimp/vim-sol'
+NeoBundle 'vim-scripts/wombat256.vim'
+NeoBundle 'vim-scripts/Wombat'
 
 colorscheme last256
 
