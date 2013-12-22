@@ -1,14 +1,11 @@
 " vim config
 " Ryan Cavicchioni
 
-if has('vim_starting')
-    set nocompatible
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
-end
-
-call neobundle#rc(expand('~/.vim/bundle/'))
-
-NeoBundleFetch 'Shougo/neobundle.vim'
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
 
 if $MONO != "yes"
     set t_Co=256            " Set to 256 color mode.
@@ -84,83 +81,84 @@ nmap <silent> <leader>u :GundoToggle<CR>
 filetype off 
 
 " Plugins
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'sjl/gundo.vim.git'
-NeoBundle 'scrooloose/nerdcommenter.git'
-NeoBundle 'scrooloose/nerdtree.git'
-NeoBundle 'msanders/snipmate.vim.git'
-NeoBundle 'godlygeek/tabular.git'
-NeoBundle 'tpope/vim-surround.git'
-NeoBundle 'mattn/gist-vim.git'
-NeoBundle 'tpope/vim-fugitive.git'
-NeoBundle 'python.vim'
-NeoBundle 'kien/ctrlp.vim.git'
-NeoBundle 'scratch.vim'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'tpope/vim-characterize'
+Bundle 'Shougo/vimproc'
+Bundle 'sjl/gundo.vim.git'
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'msanders/snipmate.vim.git'
+Bundle 'godlygeek/tabular.git'
+Bundle 'tpope/vim-surround.git'
+Bundle 'mattn/gist-vim.git'
+Bundle 'tpope/vim-fugitive.git'
+Bundle 'python.vim'
+Bundle 'kien/ctrlp.vim.git'
+Bundle 'scratch.vim'
+Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-characterize'
 
 " Syntax
-NeoBundle 'groenewege/vim-less.git'
-NeoBundle 'tpope/vim-haml.git'
-NeoBundle 'jnwhiteh/vim-golang'
-NeoBundle 'slim-template/vim-slim.git'
-NeoBundle 'juvenn/mustache.vim.git'
-NeoBundle 'puppetlabs/puppet-syntax-vim.git'
+Bundle 'groenewege/vim-less.git'
+Bundle 'tpope/vim-haml.git'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'slim-template/vim-slim.git'
+Bundle 'juvenn/mustache.vim.git'
+Bundle 'puppetlabs/puppet-syntax-vim.git'
 
 " Themes
-NeoBundle 'jnurmine/Zenburn.git'
-NeoBundle 'ciaranm/inkpot.git'
-NeoBundle 'nanotech/jellybeans.vim.git'
-NeoBundle 'guns/jellyx.vim.git'
-NeoBundle 'strange/strange.vim.git'
-NeoBundle 'veloce/vim-aldmeris.git'
-NeoBundle 'altercation/vim-colors-solarized.git'
-NeoBundle 'Lokaltog/vim-distinguished.git'
-NeoBundle 'nelstrom/vim-mac-classic-theme.git'
-NeoBundle 'atonse/vydark.git'
-NeoBundle 'vim-scripts/vylight.git'
-NeoBundle 'tpope/vim-vividchalk.git'
-NeoBundle 'ciaranm/inkpot.git'
-NeoBundle 'jpo/vim-railscasts-theme.git'
-NeoBundle 'oguzbilgic/sexy-railscasts-theme.git'
-NeoBundle 'mrkn/mrkn256.vim.git'
-NeoBundle 'bcat/abbott.vim.git'
-NeoBundle 'twilight256.vim'
-NeoBundle 'vilight.vim'
-NeoBundle 'dasch/vim-mocha.git'
-NeoBundle 'dasch/satellite.git'
-NeoBundle 'djjcast/mirodark.git'
-NeoBundle 'molok/vim-vombato-colorscheme.git'
-NeoBundle 'jelera/vim-gummybears-colorscheme.git'
-NeoBundle 'sjl/badwolf.git'
-NeoBundle 'shawncplus/skittles_berry.git'
-NeoBundle 'Skittles-Dark'
-NeoBundle 'tortex'
-NeoBundle 'mayansmoke'
-NeoBundle 'sjl/badwolf.git'
-NeoBundle 'w0ng/vim-hybrid.git'
-NeoBundle 'blackgate/tropikos-vim-theme.git'
-NeoBundle 'zaki/zazen.git'
-NeoBundle 'jonathanfilip/vim-lucius.git'
-NeoBundle 'chriskempson/vim-tomorrow-theme.git'
-NeoBundle 'tangphillip/SunburstVIM.git'
-NeoBundle 'nelstrom/vim-blackboard.git'
-NeoBundle 'tomasr/molokai.git'
-NeoBundle 'zeis/vim-kolor.git'
-NeoBundle 'morhetz/gruvbox.git'
-NeoBundle 'trapd00r/neverland-vim-theme.git'
-NeoBundle 'chriskempson/base16-vim.git'
-NeoBundle 'changyuheng/color-scheme-holokai-of-vim.git'
-NeoBundle 'noahfrederick/Hemisu.git'
-NeoBundle 'sk1418/last256.git'
-NeoBundle 'toupeira/vim-desertink.git'
-NeoBundle 'junegunn/seoul256.vim.git'
-NeoBundle 'lsdr/monokai'
-NeoBundle 'daylerees/colour-schemes', { "rtp": "vim-themes/" }
-NeoBundle 'Pychimp/vim-luna'
-NeoBundle 'Pychimp/vim-sol'
-NeoBundle 'vim-scripts/wombat256.vim'
-NeoBundle 'vim-scripts/Wombat'
+Bundle 'jnurmine/Zenburn.git'
+Bundle 'ciaranm/inkpot.git'
+Bundle 'nanotech/jellybeans.vim.git'
+Bundle 'guns/jellyx.vim.git'
+Bundle 'strange/strange.vim.git'
+Bundle 'veloce/vim-aldmeris.git'
+Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'Lokaltog/vim-distinguished.git'
+Bundle 'nelstrom/vim-mac-classic-theme.git'
+Bundle 'atonse/vydark.git'
+Bundle 'vim-scripts/vylight.git'
+Bundle 'tpope/vim-vividchalk.git'
+Bundle 'ciaranm/inkpot.git'
+Bundle 'jpo/vim-railscasts-theme.git'
+Bundle 'oguzbilgic/sexy-railscasts-theme.git'
+Bundle 'mrkn/mrkn256.vim.git'
+Bundle 'bcat/abbott.vim.git'
+Bundle 'twilight256.vim'
+Bundle 'vilight.vim'
+Bundle 'dasch/vim-mocha.git'
+Bundle 'dasch/satellite.git'
+Bundle 'djjcast/mirodark.git'
+Bundle 'molok/vim-vombato-colorscheme.git'
+"Bundle 'jelera/vim-gummybears-colorscheme.git'
+Bundle 'vim-scripts/Gummybears'
+Bundle 'sjl/badwolf.git'
+Bundle 'shawncplus/skittles_berry.git'
+Bundle 'Skittles-Dark'
+Bundle 'tortex'
+Bundle 'mayansmoke'
+Bundle 'sjl/badwolf.git'
+Bundle 'w0ng/vim-hybrid.git'
+Bundle 'blackgate/tropikos-vim-theme.git'
+Bundle 'zaki/zazen.git'
+Bundle 'jonathanfilip/vim-lucius.git'
+Bundle 'chriskempson/vim-tomorrow-theme.git'
+Bundle 'tangphillip/SunburstVIM.git'
+Bundle 'nelstrom/vim-blackboard.git'
+Bundle 'tomasr/molokai.git'
+Bundle 'zeis/vim-kolor.git'
+Bundle 'morhetz/gruvbox.git'
+Bundle 'trapd00r/neverland-vim-theme.git'
+Bundle 'chriskempson/base16-vim.git'
+Bundle 'changyuheng/color-scheme-holokai-of-vim.git'
+Bundle 'noahfrederick/Hemisu.git'
+Bundle 'sk1418/last256.git'
+Bundle 'toupeira/vim-desertink.git'
+Bundle 'junegunn/seoul256.vim.git'
+Bundle 'lsdr/monokai'
+Bundle 'daylerees/colour-schemes', { "rtp": "vim-themes/" }
+Bundle 'Pychimp/vim-luna'
+Bundle 'Pychimp/vim-sol'
+Bundle 'vim-scripts/wombat256.vim'
+Bundle 'vim-scripts/Wombat'
 
 colorscheme last256
 
@@ -173,8 +171,6 @@ inoremap # X#
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-
-NeoBundleCheck
 
 " If it exists, include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
