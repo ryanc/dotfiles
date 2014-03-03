@@ -54,7 +54,7 @@ alias ls='ls -p'
 
 # set 1337 h4x0r looking shell prompt
 #PS1="\w > "
-PS1='\[\e[1;32m\][\u@\h \w] \$\[\e[0m\] '
+PS1='\[\e[1;32m\][\u@\h \w]\$\[\e[0m\] '
 
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
