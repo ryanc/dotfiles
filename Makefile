@@ -11,8 +11,9 @@ install-git:
 	ln -s `pwd`/.gitconfig ~/.gitconfig
 
 install-bash:
-	rm -f ~/.bash_profile
+	rm -f ~/.bash_profile ~/.inputrc
 	ln -s `pwd`/.bash_profile ~/.bash_profile
+	ln -s `pwd`/.inputrc ~/.inputrc
 
 install-colordiff:
 	rm -f ~/.colordiffrc
