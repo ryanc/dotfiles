@@ -95,6 +95,7 @@ Bundle 'kien/ctrlp.vim.git'
 Bundle 'scratch.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-characterize'
+Bundle 'tpope/vim-vinegar'
 
 " Syntax
 Bundle 'groenewege/vim-less.git'
@@ -154,11 +155,13 @@ Bundle 'sk1418/last256.git'
 Bundle 'toupeira/vim-desertink.git'
 Bundle 'junegunn/seoul256.vim.git'
 Bundle 'lsdr/monokai'
-Bundle 'daylerees/colour-schemes', { "rtp": "vim-themes/" }
+Bundle 'daylerees/colour-schemes', { "rtp": "vim" }
 Bundle 'Pychimp/vim-luna'
 Bundle 'Pychimp/vim-sol'
 Bundle 'vim-scripts/wombat256.vim'
 Bundle 'vim-scripts/Wombat'
+Bundle 'hukl/Smyck-Color-Scheme'
+Bundle 'tpope/vim-commentary'
 
 colorscheme last256
 
