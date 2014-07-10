@@ -161,6 +161,7 @@ Plugin 'vim-scripts/wombat256.vim'
 Plugin 'vim-scripts/Wombat'
 Plugin 'hukl/Smyck-Color-Scheme'
 Plugin 'tpope/vim-commentary'
+Plugin 'itchyny/landscape.vim'
 
 call vundle#end()
 filetype plugin indent on
