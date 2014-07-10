@@ -70,6 +70,7 @@ au FileType yaml set tabstop=2 shiftwidth=2 softtabstop=2
 au FileType php set tabstop=4 shiftwidth=4 softtabstop=4
 au FileType make set noexpandtab
 au FileType ruby,eruby setlocal ts=2 sw=2 tw=79 et sts=2 autoindent colorcolumn=80
+au FileType puppet setlocal ts=2 sw=2 tw=80 et sts=2 autoindent colorcolumn=80
 
 " keyboard shortcuts
 nmap <silent> <leader>l :set list!<CR>
