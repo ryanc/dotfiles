@@ -163,6 +163,7 @@ Plugin 'vim-scripts/Wombat'
 Plugin 'hukl/Smyck-Color-Scheme'
 Plugin 'tpope/vim-commentary'
 Plugin 'itchyny/landscape.vim'
+Plugin 'reedes/vim-colors-pencil'
 
 call vundle#end()
 filetype plugin indent on
