@@ -23,7 +23,7 @@ fi
 
 PATH=/usr/local/bin:$PATH
 
-if [ -e "/usr/bin/keychain" ]; then
+if [ -e `which keychain` ]; then
 # load SSH key
     keychain --timeout 240 ~/.ssh/id_rsa
     source ~/.keychain/$HOSTNAME-sh
