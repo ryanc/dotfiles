@@ -21,22 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ -d "/usr/local/ssl/bin" ] ; then
-    PATH="/usr/local/ssl/bin:$PATH"
-fi
-
-if [ -d "/usr/local/php/bin" ]; then
-    PATH="/usr/local/php/bin:$PATH"
-fi
-
-if [ -d "/usr/local/pgsql/bin" ]; then
-    PATH="/usr/local/pgsql/bin:$PATH"
-fi
-
-if [ -d "/usr/local/mysql/bin" ]; then
-    PATH="/usr/local/mysql/bin:$PATH"
-fi
-
 if [ -e "/usr/bin/keychain" ]; then
 # load SSH key
     keychain --timeout 240 ~/.ssh/id_rsa
