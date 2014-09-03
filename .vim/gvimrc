@@ -4,7 +4,7 @@ elseif has("mac")
     "set guifont=Menlo\ Bold
     "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold
     "set guifont=DejaVu\ Sans\ Mono\ Bold
-    set guifont=Menlo\ Regular:h12
+    set guifont=Fira\ Mono\ OT:h12
 endif
 
 " general gui settings
