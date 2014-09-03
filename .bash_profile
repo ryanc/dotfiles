@@ -21,6 +21,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+PATH=/usr/local/bin:$PATH
+
 if [ -e "/usr/bin/keychain" ]; then
 # load SSH key
     keychain --timeout 240 ~/.ssh/id_rsa
