@@ -3,3 +3,5 @@
 	email = ryan@cavi.cc
 [color]
 	ui = true
+[push]
+	default = simple
