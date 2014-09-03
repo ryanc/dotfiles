@@ -44,10 +44,4 @@ PS1='\[\e[1;32m\][\u@\h \w]\$\[\e[0m\] '
 
 export EDITOR=vim
 
-PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
-
-# This loads RVM into a shell session.
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+source /usr/local/share/chruby/chruby.sh
