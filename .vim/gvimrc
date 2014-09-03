@@ -9,7 +9,7 @@ endif
 
 " general gui settings
 set guioptions=egt
-colorscheme Mustang
+colorscheme gruvbox
 syntax on
 
 " If it exists, include user's local vim config
