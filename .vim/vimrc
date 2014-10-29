@@ -166,6 +166,7 @@ Plugin 'itchyny/landscape.vim'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'Shougo/unite.vim'
 Plugin 'whatyouhide/vim-gotham'
+Plugin 'freeo/vim-kalisi'
 
 call vundle#end()
 filetype plugin indent on
