@@ -167,6 +167,8 @@ Plugin 'reedes/vim-colors-pencil'
 Plugin 'Shougo/unite.vim'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'freeo/vim-kalisi'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'ajh17/Spacegray.vim'
 
 call vundle#end()
 filetype plugin indent on
