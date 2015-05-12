@@ -169,6 +169,8 @@ Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plug 'ajh17/Spacegray.vim'
 Plug 'mtglsk/mushroom'
 Plug 'wellsjo/wells-colorscheme.vim'
+Plug 'romainl/Apprentice'
+Plug 'gosukiwi/vim-atom-dark'
 
 call plug#end()
 
