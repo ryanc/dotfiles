@@ -78,7 +78,7 @@ nmap <silent> <leader>u :GundoToggle<CR>
 "call pathogen#helptags()
 "call pathogen#runtime_append_all_bundles()
 
-filetype off 
+filetype off
 
 " Plugins
 Plug 'Shougo/vimproc'
@@ -171,12 +171,26 @@ Plug 'mtglsk/mushroom'
 Plug 'wellsjo/wells-colorscheme.vim'
 Plug 'romainl/Apprentice'
 Plug 'gosukiwi/vim-atom-dark'
+Plug 'fatih/vim-go'
+Plug 'abra/vim-abra'
+Plug 'nielsmadan/harlequin'
+Plug 'fxn/vim-monochrome'
+Plug 'hewo/vim-colorscheme-deepsea'
+Plug 'jyota/vimColors'
+Plug 'dylanaraps/crayon'
+Plug 'joshdick/onedark.vim'
+Plug 'andreasvc/vim-256noir'
+Plug 'petelewis/vim-evolution'
+Plug 'changyuheng/color-scheme-holokai-for-vim'
+Plug 'mhartington/oceanic-next'
 
 call plug#end()
 
 filetype plugin indent on
 
-colorscheme last256
+set background=dark
+colorscheme OceanicNext
+let g:airline_theme='oceanicnext'
 
 " Force hash comments to retain their indentation level.
 inoremap # X#
