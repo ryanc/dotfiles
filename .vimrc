@@ -192,8 +192,8 @@ call plug#end()
 filetype plugin indent on
 
 set background=dark
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
 
 " Force hash comments to retain their indentation level.
 inoremap # X#
