@@ -6,14 +6,8 @@ filetype off
 
 call plug#begin('~/.vim/pluged')
 
-if $MONO != "yes"
-    set t_Co=256            " Set to 256 color mode.
-    syntax on               " Enable syntax highlighting.
-    set nonumber              " Enable line numbering.
-else
-    " makes the autocmd's work when in MONO mode.
-    filetype on
-endif
+set t_Co=256            " Set to 256 color mode.
+syntax on               " Enable syntax highlighting.
 
 set nowrap              " Disable word wrap.
 set tabstop=4           " Set tab to 4 characters.
