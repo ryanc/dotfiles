@@ -38,6 +38,7 @@ set textwidth=80
 set spell
 set ruler
 set laststatus=2
+set colorcolumn=80
 
 nnoremap <leader>s :set spell!<CR>
 nnoremap <leader>n :set number!<CR>
