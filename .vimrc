@@ -59,6 +59,7 @@ au BufNewFile,BufRead *.txt set ft=text
 au FileType text set tw=72 spell spelllang=en_us nonumber
 
 au FileType mail set tw=72 spell spelllang=en_us nonumber
+au FileType mail colorscheme default
 au FileType gitcommit setlocal tw=72 spell spelllang=en_us nonumber
 au BufNewFile,BufEnter *.phtml set tabstop=2 shiftwidth=2 softtabstop=2
 au BufNewFile,BufEnter *.twig set tabstop=2 shiftwidth=2 softtabstop=2 ft=htmljinja
