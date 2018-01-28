@@ -98,6 +98,7 @@ Plug 'scratch.vim'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-characterize'
 Plug 'tpope/vim-vinegar'
+Plug 'ledger/vim-ledger'
 
 " Syntax
 Plug 'groenewege/vim-less'
