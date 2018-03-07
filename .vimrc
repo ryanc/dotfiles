@@ -1,6 +1,8 @@
 " vim config
 " Ryan Cavicchioni
 
+silent !mkdir -p ~/.vim/{backup,swp}/
+
 set nocompatible
 filetype off
 
@@ -33,21 +35,13 @@ set spell
 set ruler
 set laststatus=2
 set colorcolumn=80
+set diffopt+=iwhite
+set backupdir=~/.vim/backup/
+set directory=~/.vim/swp/
 
 nnoremap <leader>s :set spell!<CR>
 nnoremap <leader>n :set number!<CR>
 nnoremap <leader>rn :set relativenumber!<CR>
-
-if has("win32")
-    silent execute "!mkdir " . $HOME . "\\vimfiles\\backup"
-    silent execute "!mkdir " . $HOME . "\\vimfiles\\swp"
-    set backupdir=~/vimfiles/backup/
-    set directory=~/vimfiles/swp/
-else
-    silent !mkdir -p ~/.vim/{backup,swp}/
-    set backupdir=~/.vim/backup/
-    set directory=~/.vim/swp/
-endif
 
 au BufNewFile,BufRead *.txt set ft=text
 au FileType text set tw=72 spell spelllang=en_us nonumber
