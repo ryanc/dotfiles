@@ -159,6 +159,15 @@ let g:airline_right_sep=''
 nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 nnoremap <leader>b :<C-u>Unite -start-insert buffer<CR>
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " If it exists, include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
