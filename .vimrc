@@ -91,6 +91,7 @@ Plug 'ledger/vim-ledger'
 " Syntax
 Plug 'jnwhiteh/vim-golang'
 Plug 'puppetlabs/puppet-syntax-vim'
+Plug 'vim-syntastic/syntastic'
 
 " Themes
 Plug 'jnurmine/Zenburn'
