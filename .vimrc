@@ -27,7 +27,8 @@ set smartcase           " Smart case matching.
 set autowrite           " Save before switching buffers.
 set number
 set smarttab
-set listchars=tab:·\ ,eol:$
+" set listchars=tab:·\ ,eol:$
+set listchars=eol:¬,space:·,tab:»\ 
 set expandtab
 set backspace=indent,eol
 set textwidth=80
@@ -38,6 +39,8 @@ set colorcolumn=80
 set diffopt+=iwhite
 set backupdir=~/.vim/backup/
 set directory=~/.vim/swp/
+set termguicolors
+set updatetime=100
 
 nnoremap <leader>s :set spell!<CR>
 nnoremap <leader>n :set number!<CR>
@@ -138,14 +141,25 @@ Plug 'Shougo/unite.vim'
 Plug 'nielsmadan/harlequin'
 Plug 'dylanaraps/crayon'
 Plug 'joshdick/onedark.vim'
+Plug 'kamwitsta/flatwhite-vim'
+Plug 'srcery-colors/srcery-vim'
+Plug 'koirand/tokyo-metro.vim'
+Plug 'wesgibbs/vim-irblack'
+Plug 'agreco/vim-citylights'
+Plug 'kaicataldo/material.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'fxn/vim-monochrome'
 
 call plug#end()
 
 filetype plugin indent on
 
 set background=dark
-colorscheme gruvbox
-let g:airline_theme='gruvbox'
+colorscheme badwolf
+let g:airline_theme='badwolf'
 
 " Force hash comments to retain their indentation level.
 inoremap # X#
@@ -167,6 +181,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_yaml_checkers = ['yamllint']
 
 " If it exists, include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
