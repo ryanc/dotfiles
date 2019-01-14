@@ -152,6 +152,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'fxn/vim-monochrome'
+Plug 'ClockworkNet/vim-junos-syntax'
 
 call plug#end()
 
