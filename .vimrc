@@ -6,7 +6,9 @@ silent !mkdir -p ~/.vim/{backup,swp}/
 set nocompatible
 filetype off
 
-call plug#begin('~/.vim/pluged')
+packadd minpac
+call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 set t_Co=256            " Set to 256 color mode.
 syntax on               " Enable syntax highlighting.
@@ -68,93 +70,83 @@ nmap <silent> <leader>l :set list!<CR>
 nmap <silent> <leader>t :NERDTreeToggle<CR>
 nmap <silent> <leader>u :GundoToggle<CR>
 
-"call pathogen#helptags()
-"call pathogen#runtime_append_all_bundles()
-
 filetype off
 
 " Plugins
-Plug 'Shougo/vimproc'
-Plug 'sjl/gundo.vim'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-Plug 'msanders/snipmate.vim'
-Plug 'godlygeek/tabular'
-Plug 'tpope/vim-surround'
-Plug 'mattn/gist-vim'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-scripts/python.vim'
-Plug 'kien/ctrlp.vim'
-Plug 'vim-scripts/scratch.vim'
-Plug 'bling/vim-airline'
-Plug 'tpope/vim-characterize'
-Plug 'tpope/vim-vinegar'
-Plug 'ledger/vim-ledger'
+call minpac#add('Shougo/vimproc')
+call minpac#add('sjl/gundo.vim')
+call minpac#add('scrooloose/nerdcommenter')
+call minpac#add('scrooloose/nerdtree')
+"call minpac#add('msanders/snipmate.vim')
+call minpac#add('godlygeek/tabular')
+call minpac#add('tpope/vim-surround')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('kien/ctrlp.vim')
+call minpac#add('vim-scripts/scratch.vim')
+call minpac#add('bling/vim-airline')
+call minpac#add('tpope/vim-characterize')
+call minpac#add('tpope/vim-vinegar')
 
 " Syntax
-Plug 'jnwhiteh/vim-golang'
-Plug 'puppetlabs/puppet-syntax-vim'
-Plug 'vim-syntastic/syntastic'
+call minpac#add('jnwhiteh/vim-golang')
+call minpac#add('vim-syntastic/syntastic')
 
 " Themes
-Plug 'jnurmine/Zenburn'
-Plug 'nanotech/jellybeans.vim'
-Plug 'guns/jellyx.vim'
-Plug 'altercation/vim-colors-solarized'
-Plug 'atonse/vydark'
-Plug 'vim-scripts/vylight'
-Plug 'tpope/vim-vividchalk'
-Plug 'ciaranm/inkpot'
-Plug 'mrkn/mrkn256.vim'
-Plug 'vim-scripts/twilight256.vim'
-Plug 'vim-scripts/vilight.vim'
-Plug 'dasch/vim-mocha'
-Plug 'dasch/satellite'
-Plug 'djjcast/mirodark'
-Plug 'molok/vim-vombato-colorscheme'
+call minpac#add('jnurmine/Zenburn')
+call minpac#add('nanotech/jellybeans.vim')
+call minpac#add('guns/jellyx.vim')
+call minpac#add('altercation/vim-colors-solarized')
+call minpac#add('atonse/vydark')
+call minpac#add('vim-scripts/vylight')
+call minpac#add('tpope/vim-vividchalk')
+call minpac#add('ciaranm/inkpot')
+call minpac#add('mrkn/mrkn256.vim')
+call minpac#add('vim-scripts/twilight256.vim')
+call minpac#add('vim-scripts/vilight.vim')
+call minpac#add('dasch/vim-mocha')
+call minpac#add('dasch/satellite')
+call minpac#add('djjcast/mirodark')
+call minpac#add('molok/vim-vombato-colorscheme')
 "Plugin 'jelera/vim-gummybears-colorscheme'
-Plug 'vim-scripts/Gummybears'
-Plug 'sjl/badwolf'
-Plug 'shawncplus/skittles_berry'
-Plug 'vim-scripts/Skittles-Dark'
-Plug 'vim-scripts/tortex'
-Plug 'vim-scripts/mayansmoke'
-Plug 'w0ng/vim-hybrid'
-Plug 'blackgate/tropikos-vim-theme'
-Plug 'zaki/zazen'
-Plug 'jonathanfilip/vim-lucius'
-Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'nelstrom/vim-blackboard'
-Plug 'tomasr/molokai'
-Plug 'morhetz/gruvbox'
-Plug 'chriskempson/base16-vim'
-Plug 'sk1418/last256'
-Plug 'toupeira/vim-desertink'
-Plug 'junegunn/seoul256.vim'
-Plug 'lsdr/monokai'
-Plug 'Pychimp/vim-luna'
-Plug 'Pychimp/vim-sol'
-Plug 'vim-scripts/wombat256.vim'
-Plug 'vim-scripts/Wombat'
-Plug 'reedes/vim-colors-pencil'
-Plug 'Shougo/unite.vim'
-Plug 'nielsmadan/harlequin'
-Plug 'dylanaraps/crayon'
-Plug 'joshdick/onedark.vim'
-Plug 'kamwitsta/flatwhite-vim'
-Plug 'srcery-colors/srcery-vim'
-Plug 'koirand/tokyo-metro.vim'
-Plug 'wesgibbs/vim-irblack'
-Plug 'agreco/vim-citylights'
-Plug 'kaicataldo/material.vim'
-Plug 'arcticicestudio/nord-vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'fxn/vim-monochrome'
-Plug 'ClockworkNet/vim-junos-syntax'
-
-call plug#end()
+call minpac#add('vim-scripts/Gummybears')
+call minpac#add('sjl/badwolf')
+call minpac#add('shawncplus/skittles_berry')
+call minpac#add('vim-scripts/Skittles-Dark')
+call minpac#add('vim-scripts/tortex')
+call minpac#add('vim-scripts/mayansmoke')
+call minpac#add('w0ng/vim-hybrid')
+call minpac#add('blackgate/tropikos-vim-theme')
+call minpac#add('zaki/zazen')
+call minpac#add('jonathanfilip/vim-lucius')
+call minpac#add('chriskempson/vim-tomorrow-theme')
+call minpac#add('nelstrom/vim-blackboard')
+call minpac#add('tomasr/molokai')
+call minpac#add('morhetz/gruvbox')
+call minpac#add('chriskempson/base16-vim')
+call minpac#add('sk1418/last256')
+call minpac#add('toupeira/vim-desertink')
+call minpac#add('junegunn/seoul256.vim')
+call minpac#add('lsdr/monokai')
+call minpac#add('Pychimp/vim-luna')
+call minpac#add('Pychimp/vim-sol')
+call minpac#add('vim-scripts/wombat256.vim')
+call minpac#add('vim-scripts/Wombat')
+call minpac#add('reedes/vim-colors-pencil')
+call minpac#add('Shougo/unite.vim')
+call minpac#add('nielsmadan/harlequin')
+call minpac#add('dylanaraps/crayon')
+call minpac#add('joshdick/onedark.vim')
+call minpac#add('kamwitsta/flatwhite-vim')
+call minpac#add('srcery-colors/srcery-vim')
+call minpac#add('koirand/tokyo-metro.vim')
+call minpac#add('wesgibbs/vim-irblack')
+call minpac#add('agreco/vim-citylights')
+call minpac#add('kaicataldo/material.vim')
+call minpac#add('arcticicestudio/nord-vim')
+call minpac#add('dracula/vim')
+call minpac#add('airblade/vim-gitgutter')
+call minpac#add('vim-airline/vim-airline-themes')
+call minpac#add('fxn/vim-monochrome')
 
 filetype plugin indent on
 
