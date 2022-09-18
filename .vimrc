@@ -28,7 +28,7 @@ set autowrite           " Save before switching buffers.
 set number
 set smarttab
 set fileencoding=utf-8
-set listchars=eol:¬,space:·,tab:»\
+set listchars=eol:¬,space:·,tab:»\ 
 set expandtab
 set backspace=indent,eol
 set textwidth=80
