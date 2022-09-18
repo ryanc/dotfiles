@@ -41,7 +41,9 @@ set colorcolumn=80
 set diffopt+=iwhite
 set backupdir=~/.vim/backup/
 set directory=~/.vim/swp/
-set termguicolors
+if has('termguicolors')
+    set termguicolors
+endif
 set updatetime=100
 
 nnoremap <leader>s :set spell!<CR>
