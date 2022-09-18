@@ -194,6 +194,15 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_yaml_checkers = ['yamllint']
 
+function SetupSyntasticAvr()
+    let g:syntastic_c_compiler = "avr-gcc"
+    let g:syntastic_c_compiler_options = "-std=c99 -Wall -g -Os -mmcu=atmega328p -DF_CPU=16000000 -I ."
+endfunction
+
+if filereadable(".avr")
+    autocmd FileType c call SetupSyntasticAvr()
+endif
+
 " If it exists, include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
