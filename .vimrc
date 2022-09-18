@@ -132,7 +132,6 @@ call minpac#add('Pychimp/vim-sol')
 call minpac#add('vim-scripts/wombat256.vim')
 call minpac#add('vim-scripts/Wombat')
 call minpac#add('reedes/vim-colors-pencil')
-call minpac#add('Shougo/unite.vim')
 call minpac#add('nielsmadan/harlequin')
 call minpac#add('dylanaraps/crayon')
 call minpac#add('kamwitsta/flatwhite-vim')
@@ -179,10 +178,6 @@ inoremap # X#
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-
-" Configure unite
-nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
-nnoremap <leader>b :<C-u>Unite -start-insert buffer<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
