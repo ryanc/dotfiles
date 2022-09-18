@@ -165,8 +165,12 @@ call minpac#add('junegunn/fzf.vim')
 filetype plugin indent on
 
 set background=dark
-colorscheme badwolf
-let g:airline_theme='badwolf'
+" colorscheme Tomorrow-Night-Eighties
+set background=dark
+let g:everforest_background = 'hard'
+" colorscheme everforest
+colorscheme everblush
+let g:airline_theme='everforest'
 
 " Force hash comments to retain their indentation level.
 inoremap # X#
