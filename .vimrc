@@ -161,6 +161,10 @@ Plug 'fatih/vim-go'
 Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
 
+Plug 'mbbill/undotree'
+Plug 'tpope/vim-commentary'
+
+
 call plug#end()
 
 filetype plugin indent on
