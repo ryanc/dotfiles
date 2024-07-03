@@ -47,6 +47,10 @@ set updatetime=100
 nnoremap <leader>s :set spell!<CR>
 nnoremap <leader>n :set number!<CR>
 nnoremap <leader>rn :set relativenumber!<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>c :Colors<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 
 au BufNewFile,BufRead *.txt set ft=text
 au FileType text set tw=72 spell spelllang=en_us nonumber
