@@ -208,3 +208,8 @@ endif
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
 endif
+
+if !has('nvim')
+    set guifont=FiraCode
+    set guiligatures=!\"#$%&()*+-./:<=>?@[]^_{\|~
+endif
