@@ -16,6 +16,7 @@ return {
 					"standardrb",
 					"terraformls",
 					"yamlls",
+					"pyright",
 				},
 			})
 		end,
@@ -47,6 +48,7 @@ return {
 					},
 				},
 			})
+			lspconfig.pyright.setup({})
 		end,
 	},
 }
