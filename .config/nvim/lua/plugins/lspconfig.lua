@@ -1,14 +1,14 @@
 return {
 	{
 		"williamboman/mason.nvim",
-        config = function()
+		config = function()
 			require("mason").setup()
 		end,
-},
+	},
 	{
 		"williamboman/mason-lspconfig.nvim",
 		dependencies = { "williamboman/mason.nvim" },
-        config = function()
+		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
@@ -49,6 +49,7 @@ return {
 				},
 			})
 			lspconfig.pyright.setup({})
+			lspconfig.gopls.setup({})
 		end,
 	},
 }
