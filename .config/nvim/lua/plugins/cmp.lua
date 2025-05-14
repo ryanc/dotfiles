@@ -40,14 +40,14 @@ return {
 			}
 		end,
 		--[[
-        keys = {
-            { "<C-b>", function() require('cmp').mapping.scroll_docs(-4) end },
-            { "<C-f>", function() require('cmp').mapping.scroll_docs(4) end },
-            { "<C-Space>", function() require('cmp').mapping.complete() end },
-            { "<C-e>", function() require('cmp').mapping.abort() end },
-            { "<CR>", function() require('cmp').mapping.confirm({ select = true }) end },
-        },
-        ]]
+	keys = {
+	    { "<C-b>", function() require('cmp').mapping.scroll_docs(-4) end },
+	    { "<C-f>", function() require('cmp').mapping.scroll_docs(4) end },
+	    { "<C-Space>", function() require('cmp').mapping.complete() end },
+	    { "<C-e>", function() require('cmp').mapping.abort() end },
+	    { "<CR>", function() require('cmp').mapping.confirm({ select = true }) end },
+	},
+	]]
 		--
 	},
 }
