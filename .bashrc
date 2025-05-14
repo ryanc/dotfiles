@@ -59,6 +59,29 @@ else
     warn "nvim not found"
 fi
 
+# OS specific environment
+case "$OSTYPE" in
+    darwin*)
+        # Homebrew
+        if [[ -f /opt/homebrew/bin/brew ]]; then
+            eval "$(/opt/homebrew/bin/brew shellenv)"
+            success "set up homebrew"
+        else
+            warn "homebrew not found"
+        fi
+
+        # Ruby
+        if [[ -d /opt/homebrew/opt/ruby ]]; then
+            export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+            export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+            export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+            success "set up homebrew ruby"
+        else
+            warn "homebrew ruby not found"
+        fi
+        ;;
+esac
+
 # Tools
 
 # fzf
