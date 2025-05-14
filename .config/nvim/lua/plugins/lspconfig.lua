@@ -13,10 +13,12 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"ruby_lsp",
-					"standardrb",
+					-- "standardrb",
 					"terraformls",
 					"yamlls",
 					"pyright",
+                    "zls",
+                    "gopls",
 				},
 			})
 		end,
@@ -27,8 +29,14 @@ return {
 		config = function()
 			local lspconfig = require("lspconfig")
 
-            lspconfig.ruby_lsp.setup({})
-			lspconfig.standardrb.setup({})
+            lspconfig.zls.setup({})
+            lspconfig.ruby_lsp.setup({
+                init_options = {
+                    formatter = "standard",
+                    linters = { "standard" },
+                }
+            })
+            -- lspconfig.standardrb.setup({})
 			lspconfig.bashls.setup({})
 			lspconfig.yamlls.setup({})
 			lspconfig.terraformls.setup({})
@@ -50,6 +58,7 @@ return {
 			})
 			lspconfig.pyright.setup({})
 			lspconfig.gopls.setup({})
+			lspconfig.zls.setup({})
 		end,
 	},
 }
