@@ -19,6 +19,7 @@ return {
 					"pyright",
                     "zls",
                     "gopls",
+                    "bashls",
 				},
 			})
 		end,
