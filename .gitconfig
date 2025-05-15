@@ -1,7 +1,7 @@
 [user]
 	name = Ryan Cavicchioni
 	email = ryan@cavi.cc
-	signingkey = /home/ryan/.ssh/id_ed25519.pub
+	signingkey = ~/.ssh/id_ed25519.pub
 [color]
 	ui = true
 [push]
@@ -17,7 +17,7 @@
 [log]
     showSignature = true
 [gpg "ssh"]
-	allowedSignersFile = /home/ryan/.ssh/allowed_signers
+	allowedSignersFile = ~/.ssh/allowed_signers
 [diff]
     tool = meld
 [difftool]
