@@ -49,17 +49,10 @@ HISTFILESIZE=$HISTSIZE
 HISTCONTROL=ignorespace:ignoredups
 shopt -s histappend
 
-if command -v nvim > /dev/null; then
-    success "setting EDITOR to nvim"
-    export EDITOR=nvim
-
-    success "setting MANPAGER viewer to nvim"
-    export MANPAGER="nvim +Man!"
-else
-    warn "nvim not found"
-fi
-
 # OS specific environment
+#
+# This should be executed before the tools section, especially if we are using
+# tools from Homebrew
 case "$OSTYPE" in
     darwin*)
         # Homebrew
@@ -83,6 +76,16 @@ case "$OSTYPE" in
 esac
 
 # Tools
+
+if command -v nvim > /dev/null; then
+    success "setting EDITOR to nvim"
+    export EDITOR=nvim
+
+    success "setting MANPAGER viewer to nvim"
+    export MANPAGER="nvim +Man!"
+else
+    warn "nvim not found"
+fi
 
 # fzf
 if command -v fzf > /dev/null; then
