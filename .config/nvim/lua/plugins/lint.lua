@@ -14,7 +14,7 @@ return {
 			-- ruby = { "rubocop", "standardrb" },
 			ruby = { "standardrb" },
 			go = { "golangcilint" },
-	}
+		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 			callback = function()
